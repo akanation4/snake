@@ -4,13 +4,21 @@
         <meta charset="utf-8">
         <title>Snake</title>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
+        <!-- CSS -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="app">
+            <!-- HTML handled by Vue-->
             <div id="stage">
-                <div class="cell" v-for="i in 100" :key="i"></div>
+                <div
+                    class="cell"
+                    v-for="i in stage_cells_count"
+                    :key="i"
+                    :class="{
+                        head: snake_head_index === i - 1,
+                        }"
+                ></div>
             </div>
         </div>
 

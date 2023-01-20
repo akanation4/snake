@@ -8,5 +8,10 @@
 
 /* All cells */
 .cell {
-    background: blue;
+    background: whitesmoke;
+}
+
+/* Snake head cell */
+.cell.head {
+    background: dimgray
 }
