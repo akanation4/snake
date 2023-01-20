@@ -1,0 +1,12 @@
+/* Glid layout */
+#stage {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    grid-gap: 2px;
+}
+
+/* All cells */
+.cell {
+    background: blue;
+}
